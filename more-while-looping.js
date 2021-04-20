@@ -21,7 +21,24 @@ while (index < poodles.length) {
     } else {
         break
     }
-
 }
+
+
+let result = ""
+for (let index = 0; index < poodles.length; index += 1) {
+    let poodle = poodles[index]
+    result += poodle
+
+    let lastIndex = poodles.length - 1
+    let secondToLastIndex = lastIndex - 1
+    if (index < secondToLastIndex) {
+        result += ", "
+    } else if (index === secondToLastIndex) {
+        result += ", and "
+    }
+}
+console.log(result)
+
+
 
 console.log("We've reached the end of the code. The loop has stopped.")
