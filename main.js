@@ -4,7 +4,6 @@ while (count <= 3) {
     count += 1
 }
 
-
 let riddle = "What has ears but can't hear? (Do not use capital letters.)"
 let correctResponse = "corn"
 let response = null
